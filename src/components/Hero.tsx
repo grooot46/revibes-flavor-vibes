@@ -26,7 +26,7 @@ const Hero = () => {
           🌙✨ <span className="text-gold">REVIBES</span> CAFE & RESTRO ✨🌙
         </h1>
         <p className="text-xl md:text-2xl mb-4 opacity-90">
-          🍴 Where Taste Meets Vibe – Now Dark, Cozy & More Delicious! ☕🎧
+          🍴 Where Taste Meets Vibe – Now Dark, Cozy & More Delicious!
         </p>
         <p className="text-lg mb-8 opacity-80">
           🌑 Good food, great music, better memories 🎧

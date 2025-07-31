@@ -45,7 +45,7 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">9863575090</p>
-                <Button variant="cafe" size="sm">
+                <Button variant="gold" size="sm">
                   Call Now
                 </Button>
               </CardContent>
@@ -85,7 +85,7 @@ const Contact = () => {
 
             <div className="space-y-4">
               <Button variant="gold" size="lg" className="w-full">
-                Order for Delivery
+                🚚 Order for Delivery
               </Button>
               <Button 
                 variant="outline" 

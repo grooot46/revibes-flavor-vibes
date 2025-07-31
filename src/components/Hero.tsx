@@ -23,13 +23,13 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          Welcome to <span className="text-gold">Revibes</span>
+          🌙✨ <span className="text-gold">REVIBES</span> CAFE & RESTRO ✨🌙
         </h1>
         <p className="text-xl md:text-2xl mb-4 opacity-90">
-          Where Flavor Meets Vibes in the Heart of Chundevi! ✨
+          🍴 Where Taste Meets Vibe – Now Dark, Cozy & More Delicious! ☕🎧
         </p>
         <p className="text-lg mb-8 opacity-80">
-          🍝 Mouth-Watering Dishes | Chilled Drinks | Cozy Ambience 🎧
+          🌑 Good food, great music, better memories 🎧
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">

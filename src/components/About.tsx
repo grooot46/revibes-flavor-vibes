@@ -33,7 +33,7 @@ const About = () => {
             About <span className="text-primary">Revibes</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            🌈 Step in for Good Food, Great Mood, and Unforgettable Vibes. At Revibes Cafe & Restro, 
+            Step in for Good Food, Great Mood, and Unforgettable Vibes. At Revibes Cafe & Restro, 
             we believe that great food and amazing atmosphere go hand in hand. Our mission is to create 
             a space where every moment becomes a cherished memory.
           </p>
@@ -64,7 +64,7 @@ const About = () => {
             in an atmosphere that feels like home.
           </p>
           <div className="text-gold text-sm font-medium">
-            ✨ Where Flavor Meets Vibes ✨
+            Where Flavor Meets Vibes
           </div>
         </div>
       </div>

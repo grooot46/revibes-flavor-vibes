@@ -44,11 +44,18 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="gold" size="lg" className="text-lg px-8 py-3">
-            <Coffee className="mr-2 h-5 w-5" />
-            View Menu
-          </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-cream text-cream hover:bg-cream hover:text-sage">
+          <a href="#menu">
+            <Button variant="gold" size="lg" className="text-lg px-8 py-3">
+              <Coffee className="mr-2 h-5 w-5" />
+              View Menu
+            </Button>
+          </a>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-lg px-8 py-3 border-cream text-cream hover:bg-cream hover:text-sage"
+            onClick={() => window.open('tel:9863575090', '_self')}
+          >
             Call Us: 9863575090
           </Button>
         </div>

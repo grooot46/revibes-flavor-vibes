@@ -23,9 +23,11 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="cafe" size="sm" className="hidden md:inline-flex">
-            Order Now
-          </Button>
+          <a href="#menu">
+            <Button variant="cafe" size="sm" className="hidden md:inline-flex">
+              Order Now
+            </Button>
+          </a>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="h-5 w-5" />
           </Button>

@@ -25,7 +25,7 @@ const Reviews = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            🗣️ Customer <span className="text-primary">Reviews</span> ⭐⭐⭐⭐⭐
+            Customer <span className="text-primary">Reviews</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             What our customers say about us
@@ -59,10 +59,10 @@ const Reviews = () => {
 
         <div className="text-center mt-12">
           <p className="text-lg text-muted-foreground mb-4">
-            🎧 Good food, great music, better memories – only at Revibes Cafe & Restro.
+            Good food, great music, better memories – only at Revibes Cafe & Restro.
           </p>
           <p className="text-sm text-muted-foreground">
-            📸 Tag us at #RevibesCafe for a chance to be featured!
+            Tag us at #RevibesCafe for a chance to be featured!
           </p>
         </div>
       </div>

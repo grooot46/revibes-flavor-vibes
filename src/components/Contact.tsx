@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, Instagram } from "lucide-react";
+import BookingForm from "./BookingForm";
 
 const Contact = () => {
   return (
@@ -83,14 +84,30 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
-              <Button variant="gold" size="lg" className="w-full">
-                🚚 Order for Delivery
-              </Button>
+            <div className="flex flex-col gap-4">
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="w-full border-cream text-cream hover:bg-cream hover:text-sage"
+                className="bg-cream/10 border-cream/30 text-cream hover:bg-cream/20"
+                onClick={() => window.open('tel:9863575090', '_self')}
+              >
+                Call to Order
+              </Button>
+              <div className="flex gap-4">
+                <BookingForm />
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="bg-cream/10 border-cream/30 text-cream hover:bg-cream/20"
+                  onClick={() => window.open('https://wa.me/9779863575090', '_blank')}
+                >
+                  WhatsApp Delivery
+                </Button>
+              </div>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-cream text-cream hover:bg-cream hover:text-sage"
               >
                 <Instagram className="mr-2 h-5 w-5" />
                 Follow Us @RevibesCafe
@@ -99,7 +116,7 @@ const Contact = () => {
 
             <div className="mt-8 pt-6 border-t border-cream/20">
               <p className="text-sm opacity-80">
-                📸 Don't forget to tag us in your photos!
+                Don't forget to tag us in your photos!
               </p>
               <p className="text-gold font-medium mt-2">
                 #RevibesCafe #FlavorMeetsVibes

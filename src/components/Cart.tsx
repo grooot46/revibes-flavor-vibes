@@ -30,6 +30,7 @@ const Cart = ({ items, onUpdateQuantity, onRemoveItem, onClearCart }: CartProps)
   }, 0);
 
   const handleOrder = () => {
+    console.log("Handle order called, items:", items);
     if (items.length === 0) {
       toast({
         title: "Cart is empty",
@@ -40,11 +41,14 @@ const Cart = ({ items, onUpdateQuantity, onRemoveItem, onClearCart }: CartProps)
     }
 
     const orderSummary = items.map(item => 
-      `${item.name} x${item.quantity} - ${item.price}`
+      `${item.name} x${item.quantity} - ${item.price} each`
     ).join('\n');
     
-    const message = `New Order:\n\n${orderSummary}\n\nTotal: रु. ${totalPrice}\n\nPlease confirm this order.`;
+    const message = `🛒 New Order from Revibes Website:\n\n${orderSummary}\n\nTotal: रु. ${totalPrice}\n\nPlease confirm this order and let me know the delivery time. Thank you!`;
+    console.log("WhatsApp message:", message);
+    
     const whatsappUrl = `https://wa.me/9779863575090?text=${encodeURIComponent(message)}`;
+    console.log("WhatsApp URL:", whatsappUrl);
     
     window.open(whatsappUrl, '_blank');
     onClearCart();

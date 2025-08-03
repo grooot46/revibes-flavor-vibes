@@ -46,7 +46,11 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">9863575090</p>
-                <Button variant="gold" size="sm">
+                <Button 
+                  variant="gold" 
+                  size="sm"
+                  onClick={() => window.open('tel:9863575090', '_self')}
+                >
                   Call Now
                 </Button>
               </CardContent>

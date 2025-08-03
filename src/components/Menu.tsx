@@ -56,22 +56,28 @@ const Menu = () => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const addToCart = (item: any) => {
+    console.log("Adding item to cart:", item);
     setCartItems(prev => {
       const existingItem = prev.find(cartItem => cartItem.id === item.id);
       if (existingItem) {
-        return prev.map(cartItem =>
+        const updated = prev.map(cartItem =>
           cartItem.id === item.id
             ? { ...cartItem, quantity: cartItem.quantity + 1 }
             : cartItem
         );
+        console.log("Updated cart (existing item):", updated);
+        return updated;
       }
-      return [...prev, { ...item, quantity: 1 }];
+      const newCart = [...prev, { ...item, quantity: 1 }];
+      console.log("Updated cart (new item):", newCart);
+      return newCart;
     });
     
     toast({
       title: "Added to cart!",
       description: `${item.name} has been added to your cart.`,
     });
+    console.log("Toast should have appeared");
   };
 
   const updateQuantity = (id: string, quantity: number) => {

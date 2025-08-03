@@ -22,6 +22,7 @@ const BookingForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("Booking form submitted:", formData);
     
     if (!formData.name || !formData.phone || !formData.date || !formData.time || !formData.guests) {
       toast({
@@ -32,19 +33,22 @@ const BookingForm = () => {
       return;
     }
 
-    const bookingMessage = `New Table Booking Request:
+    const bookingMessage = `🍽️ New Table Booking Request:
 
-Name: ${formData.name}
-Phone: ${formData.phone}
-Email: ${formData.email}
-Date: ${formData.date}
-Time: ${formData.time}
-Number of Guests: ${formData.guests}
-Special Requests: ${formData.message || 'None'}
+📝 Name: ${formData.name}
+📞 Phone: ${formData.phone}
+📧 Email: ${formData.email || 'Not provided'}
+📅 Date: ${formData.date}
+🕐 Time: ${formData.time}
+👥 Number of Guests: ${formData.guests}
+💬 Special Requests: ${formData.message || 'None'}
 
-Please confirm this booking.`;
+Please confirm this booking. Thank you!`;
 
+    console.log("Booking message:", bookingMessage);
     const whatsappUrl = `https://wa.me/9779863575090?text=${encodeURIComponent(bookingMessage)}`;
+    console.log("WhatsApp URL:", whatsappUrl);
+    
     window.open(whatsappUrl, '_blank');
     
     setFormData({
